@@ -5,7 +5,7 @@ use Maclof\Kubernetes\Collections\QuotaCollection;
 class QuotaRepository extends Repository
 {
 	protected $uri = 'resourcequotas';
-	protected $namespace = false;
+	protected $namespace = true;
 
 	protected function createCollection($response)
 	{
